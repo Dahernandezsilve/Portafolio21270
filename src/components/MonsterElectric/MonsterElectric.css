@@ -6,7 +6,6 @@ html {
   background: black;
 }
 
-
 .buymeacoffee {
   text-decoration: none;
   position: fixed;
@@ -18,11 +17,21 @@ html {
   border-radius: 50%;
   transition: all 0.1s linear;
   box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
-  z-index: 1000;
+  z-index: 500;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.button-container {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: aliceblue;
+}
+
+
 
 .buymeacoffee:hover {
   width: 4rem;

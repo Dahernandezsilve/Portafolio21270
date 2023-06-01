@@ -9,7 +9,7 @@ export default {
   },
 }
 
-export const AsNumber = {
+export const AsMonster = {
   args: {
   },
 }
