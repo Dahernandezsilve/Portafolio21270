@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from "react";
+import React from "react";
 import './MonsterElectric.css'
-import TitleP from "../Map/TitleP";
+import TitleP from "../TitleP/TitleP";
 
 const MonsterElectric = () => {
     window.requestAnimFrame = function () {
