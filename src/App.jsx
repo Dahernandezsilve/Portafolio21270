@@ -3,10 +3,9 @@ import './App.css'
 import MonsterElectric from './components/MonsterElectric/MonsterElectric'
 
 function App() {
-
   return (
-    <div className='cameramove' style={{ overflow: 'hidden'}}>
-    
+    <div className="cameramove" style={{ overflow: 'hidden' }}>
+
       <MonsterElectric />
     </div>
   )

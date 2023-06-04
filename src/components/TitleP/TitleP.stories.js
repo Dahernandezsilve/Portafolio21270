@@ -5,10 +5,13 @@ export default {
   component: TitleP,
   tags: ['autodocs'],
   argTypes: {
+    strings: {control: 'array' }
   },
 }
 
 export const Title = {
   args: {
+    strings: ['hola', '...', 'prueba1','....', 'prueba2']
+
   },
 }

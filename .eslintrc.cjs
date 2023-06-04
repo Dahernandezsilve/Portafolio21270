@@ -1,14 +1,23 @@
 module.exports = {
-  "env": {
-    "browser": true,
-    "es2021": true
+  env: {
+    browser: true,
+    es2021: true,
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended", "plugin:storybook/recommended"],
-  "overrides": [],
-  "parserOptions": {
-    "ecmaVersion": "latest",
-    "sourceType": "module"
+  extends: [
+    'plugin:react/recommended',
+    'airbnb',
+  ],
+  parserOptions: {
+    ecmaFeatures: {
+      jsx: true,
+    },
+    ecmaVersion: 14,
+    sourceType: 'module',
   },
-  "plugins": ["react"],
-  "rules": {}
-};
+  plugins: [
+    'react',
+  ],
+  rules: {
+    semi: ['error', 'never'],
+  },
+}
