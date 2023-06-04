@@ -1,17 +1,14 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+/* eslint-disable react/react-in-jsx-scope */
 import './App.css'
 import MonsterElectric from './components/MonsterElectric/MonsterElectric'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
-    <>
-    <MonsterElectric/>
-
-    </>
+    <div className='cameramove' style={{ overflow: 'hidden'}}>
+    
+      <MonsterElectric />
+    </div>
   )
 }
 

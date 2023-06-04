@@ -6,8 +6,7 @@
   body {
     height: 100%;
     margin: 0;
-    font-family: 'Unica One', sans-serif;
-    background: #111;
+    font-family: Orbitron;
   }
   
   .container {
@@ -19,8 +18,7 @@
   
   .heading {
     color: #eee;
-    font-size: 5rem;
-    font-weight: 300;
+    font-size: 8vh;
     text-transform: uppercase;
     text-shadow: 0 0 10px rgba(0, 174, 239, 0.8);
   }

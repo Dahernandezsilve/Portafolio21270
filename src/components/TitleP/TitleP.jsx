@@ -148,8 +148,8 @@ const TitleP = ({ strings }) => {
   }, []);
 
   return (
-    <div className="container">
-      <h1 className="heading" data-target-resolver></h1>
+    <div className="container" style={{ overflow: 'hidden'}}>
+      <h1 className="heading" style={{ overflow: 'hidden'}} data-target-resolver></h1>
     </div>
   );
 };

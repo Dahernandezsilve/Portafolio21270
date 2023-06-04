@@ -1,6 +1,9 @@
 import React from "react";
 import './MonsterElectric.css'
 import TitleP from "../TitleP/TitleP";
+import Cursor from "../Skills/Skills";
+import Header from "../Header/Header";
+import Skills from "../Skills/Skills";
 
 const MonsterElectric = () => {
     window.requestAnimFrame = function () {
@@ -20,7 +23,7 @@ const MonsterElectric = () => {
         let canvas = document.getElementById(elemid),
           c = canvas.getContext("2d"),
           w = (canvas.width = window.innerWidth),
-          h = (canvas.height = window.innerHeight);
+          h = (canvas.height = window.innerHeight*5.5);
         c.fillStyle = "rgba(30,30,30,1)";
         c.fillRect(0, 0, w, h);
         return { c: c, canvas: canvas };
@@ -30,7 +33,7 @@ const MonsterElectric = () => {
         let c = init("canvas").c,
           canvas = init("canvas").canvas,
           w = (canvas.width = window.innerWidth),
-          h = (canvas.height = window.innerHeight),
+          h = (canvas.height = window.innerHeight*7),
           mouse = { x: false, y: false },
           last_mouse = {};
       
@@ -267,26 +270,116 @@ const MonsterElectric = () => {
       };
 
       return (
-        <div >
-        <canvas id="canvas">
-        </canvas>
-        <div className="button-container">
-          <TitleP strings={[
+          <div className="container" style={{ overflow: 'hidden'}}>
+            <div className="canvas-container" style={{ overflow: 'hidden'}}>
+              <canvas style={{ overflow: 'hidden'}} id="canvas"></canvas>
+            </div>
+            <div className="button-container" style={{ overflow: 'hidden'}}>
+            <TitleP strings={[
             'HI',
             '....',
             "I'm Diego",
             '.....',
             '¿WHO AM I?',
             '.....',
-            '¿WHAT CAN I DO?',
-            '......',
             '¿WHERE AM I FROM?',
+            '......',
+            '¿WHAT CAN I DO?',
             '.....',
             'ALL HERE',
             '↓'            
             ]}></TitleP>
-        </div>
-        </div>
+            </div>
+            <div className="button-containerP" style={{ overflow: 'hidden'}}>
+              <Header></Header>
+            </div>
+            <div className="button-containerG">
+              <a href="https://uvgenios.online/21270/Proyecto1STW/">
+              <div className="card1">
+                <h1><small>Replicating a website</small><br/>Locomotive</h1>´
+                <video autoPlay loop muted className="homeVideoView">
+                  <source src="/videos/fondo.mp4" type="video/mp4" />
+                </video>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '150vh', left: '150vh' }}>
+              <a href="https://deft-haupia-34e13b.netlify.app/">
+              <div className="card1">
+                <h1><small>¿A GAME?</small><br/>CUPHEAD'S MAZE</h1>´
+                <video autoPlay loop muted className="homeVideoView" style={{  width: '40vw', height: 'auto'}}>
+                  <source src="/videos/inicio.mp4" />
+                </video>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '205vh', left: '50vh', width: '45vw' }}>
+              <a href="https://github.com/Dahernandezsilve/proyectomgafrontend.git">
+              <div className="card1">
+                <h1><small>App</small><br/>Proyecto MGA</h1>
+                <img src="/ElCeibillal.png" alt="Profile"/>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '235vh', left: '150vh', width: '45vw' }}>
+              <a href="https://github.com/Dahernandezsilve/Project_B-Line.git">
+              <div className="card1">
+                <h1><small>Another App</small><br/>B-Line</h1>
+                <img src="/Bline.png" alt="Profile"/>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '280vh', left: '50vh', width: '45vw' }}>
+              <a href="http://hexateam.lat/">
+              <div className="card1">
+                <h1><small>DB Project</small><br/>Medical platform</h1>
+                <img src="/medicos.png" alt="Profile"/>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '365vh', left: '100vh', width: '50wh', height: 0}}>
+              <p style={{fontSize: 200, height: 0, marginBottom: '30vh'}}>SKILLS</p>
+              <Skills skill='REACT' level='110' color='#00caef'/>
+              <Skills skill='JAVASCRIPT' level='100' color='#f7f701'/>
+              <Skills skill='REACT NATIVE' level='95' color='#009dcc'/>
+              <Skills skill='HTML' level='95' color='#d84924'/>
+              <Skills skill='POSTGRES' level='90' color='#2f5c8b'/>
+              <Skills skill='JAVA' level='80' color='#e11e23'/>
+              <Skills skill='PYTHON' level='80' color='#bbd93b'/>
+              <Skills skill='CSS' level='80' color='#2449d8'/>
+              <Skills skill='KOTLIN' level='60' color='#7666f2'/>
+              <Skills skill='ANDROID' level='60' color='#2fd37d'/>
+              <Skills skill='C++' level='60' color='#005494'/>
+              <Skills skill='UBUNTU' level='50' color='#db5424'/>
+            </div>
+            <div className="button-containerG" style={{top: '480vh', left: '100vh', width: '50wh', height: 0}}>
+              <p style={{fontSize: 100, height: 0, marginBottom: '30vh'}}>CONTACT WITH ME</p>
+            </div>
+            <div className="button-containerG" style={{top: '520vh', left: '50vh', width: '45vw' }}>
+              <a href="https://github.com/Dahernandezsilve">
+              <div className="card2">
+                <h1><small>GITHUB</small><br/>DAHERNANDEZSILVE</h1>
+                <img src="/Git.png" alt="Profile" className="imageContact"/>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '520vh', left: '150vh', width: '45vw' }}>
+              <a href="https://github.com/Dahernandezsilve">
+              <div className="card2">
+                <h1><small>INSTAGRAM</small><br/>DAHERNANDEZLIVE</h1>
+                <img src="/Instagram.png" alt="Profile" className="imageContact"/>
+              </div>
+              </a>
+            </div>
+            <div className="button-containerG" style={{top: '575vh', left: '100vh', width: '45vw' }}>
+              <a href="https://github.com/Dahernandezsilve">
+              <div className="card2">
+                <h1><small>TWITTER</small><br/>DAHERNANDEZ</h1>
+                <img src="/twitter.png" alt="Profile" className="imageContact"/>
+              </div>
+              </a>
+            </div>
+          </div>
       )
     }
 
